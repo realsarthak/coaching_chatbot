@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Coaching Academy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Elite Coaching Academy</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#whyus">Why Us</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Shape Your Future With Elite Coaching</h1>
+            <p>Expert faculty, structured batches, online + offline learning, and AI-powered student guidance.</p>
+            <a href="#courses" class="btn">Explore Courses</a>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses" id="courses">
+        <h2>Our Courses</h2>
+        <div class="course-cards">
+            <div class="card">
+                <h3>JEE Preparation</h3>
+                <p>Comprehensive IIT-JEE Main & Advanced preparation.</p>
+            </div>
+            <div class="card">
+                <h3>NEET Preparation</h3>
+                <p>Structured preparation for medical entrance success.</p>
+            </div>
+            <div class="card">
+                <h3>Boards Excellence</h3>
+                <p>Score higher in Class 11 and 12 board exams.</p>
+            </div>
+            <div class="card">
+                <h3>Foundation Course</h3>
+                <p>Strong conceptual learning for Classes 8 to 10.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us -->
+    <section class="whyus" id="whyus">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature">Experienced Faculty</div>
+            <div class="feature">Online + Offline Batches</div>
+            <div class="feature">Weekly Tests & Analytics</div>
+            <div class="feature">Personal Mentorship</div>
+            <div class="feature">Scholarship Programs</div>
+            <div class="feature">AI Student Assistance</div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <h2>Student Testimonials</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial">“The faculty support and test series helped me improve a lot.” – Aarav</div>
+            <div class="testimonial">“The NEET batch was well structured and very motivating.” – Priya</div>
+            <div class="testimonial">“Loved the personal attention and doubt solving sessions.” – Rohan</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>📍 Dhule, Maharashtra</p>
+        <p>📞 +91 999999999</p>
+        <p>📧 admissions@elitecoaching.com</p>
+    </section>
+
+    <!-- Chatbot Floating Button -->
+    <div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-container" id="chatbot">
+        <div class="chat-header">
+            <span>EduGuide AI</span>
+            <button onclick="toggleChat()">✖</button>
+        </div>
+        <div class="chat-body" id="chat-body">
+            <div class="bot-message">Hello! Ask me about courses, fees, admissions, schedules, and batches.</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="Type your question...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
